@@ -56,12 +56,14 @@ create or replace procedure retirerProfesseur(matricule "MDD".matriculep)
 begin
     atomic
     delete from "MDD".professeur where matriculep = matricule;
+end;
 
-    create or replace procedure modifierProfesseur(matricule "MDD".matriculep, nom "MDD".nom)
+create or replace procedure modifierProfesseur(matricule "MDD".matriculep, nom "MDD".nom)
         external security definer
     begin
         atomic
         update "MDD".professeur set nom = nom where matriculep = matricule;
+    end;
 
 
 --  Étudiant
@@ -163,6 +165,7 @@ begin
             update "MDD".groupe set nogroupe = _nogroupe where sigle = _sigle and trimestre = _trimestre;
         end;
         --
+
 --  Ajouter, retirer : une compétence, une disponibilité ou une affectation à un professeur.
 --
         --affectation

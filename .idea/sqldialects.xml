@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Universite/iter06/src/sql/000_Universite_ini.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Universite/iter06/src/sql/010_Universite_MDD_types.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Universite/iter06/src/sql/020_Universite_MDD_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Universite/iter06/src/sql/030_Universite_IMM_base.sql" dialect="PostgreSQL" />
+    <file url="PROJECT" dialect="PostgreSQL" />
+  </component>
+</project>
